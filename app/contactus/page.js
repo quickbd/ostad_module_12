@@ -1,11 +1,6 @@
 "use client";
 import { Suspense } from "react";
 
-export const metadata = {
-  title: "Contact Us",
-  description: "Md. Hasanat Zamil, Project manager",
-};
-
 export default async function contactus(param) {
   return (
     <div className="container   m-auto my-40 items-center justify-between">
