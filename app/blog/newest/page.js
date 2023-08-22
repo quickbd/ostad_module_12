@@ -24,8 +24,7 @@ export default async function NewestPost() {
   let blogData = await getNewestBlogs();
 
   return (
-    <div className="container   m-auto  items-center justify-between">
-      <h2 className="text-center my-10">Newest Post</h2>
+    <div className="container  w-100 m-auto  items-center justify-between">
       <Suspense fallback={<h3>Loadding Post.....</h3>}>
         <div className="grid  grid-cols-3 grid-rows-4 gap-2">
           {blogData.map((blog) => (

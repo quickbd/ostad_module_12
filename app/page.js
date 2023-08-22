@@ -8,6 +8,7 @@ export default function Home() {
       <Slideshow />
       <div className="max-w-[1240px]  m-auto my-5 ">
         <BlogCategories />
+        <div className="font-bold text-xl  mt-5 mb-3">Latest Post</div>
         <NewestPost />
       </div>
     </main>

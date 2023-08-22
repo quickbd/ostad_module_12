@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState("transparent");
+  const [color, setColor] = useState("#FFFFFF"); //transparent
   const [textColor, setTextColor] = useState("#000000");
 
   const handleNav = () => {
@@ -79,7 +79,7 @@ const Navbar = () => {
             <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/about">About Us</Link>
             </li>
- <li className="p-4 text-4xl hover:text-gray-500">
+            <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/blog">Blog</Link>
             </li>
             <li
