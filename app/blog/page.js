@@ -2,10 +2,6 @@
 import getPostCategory from "@/lib/getPostCategory";
 import Link from "next/link";
 import NewestPost from "./newest/page";
-export const metadata = {
-  title: "My Blog",
-  description: "Blog List",
-};
 
 export default async function Blog() {
   const blogData = await getPostCategory();
