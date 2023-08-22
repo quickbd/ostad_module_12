@@ -7,7 +7,7 @@ API Documention : https://documenter.getpostman.com/view/9518923/2s946mZ9Zw
 
 
  
-Assignment Link: https://ostad-module-12.vercel.app/
+Assignment Link: https://module-12-blog.vercel.app/
 
 
 
