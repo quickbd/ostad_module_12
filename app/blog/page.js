@@ -34,7 +34,7 @@ export default async function Blog() {
 
         <div className=" col-span-4 flex items-center">
           <div>
-            <div className="font-bold text-xl   my-5">Latest Post</div>
+            <div className="font-bold text-xl my-5">Latest Post</div>
             <NewestPost />
           </div>
         </div>
