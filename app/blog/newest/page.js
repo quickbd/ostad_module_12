@@ -1,10 +1,6 @@
 import { format } from "date-fns";
 import Link from "next/link";
 import { Suspense } from "react";
-export const metadata = {
-  title: "My Blog",
-  description: "Blog List",
-};
 
 async function getNewestBlogs() {
   let res = await fetch("https://basic-blog.teamrabbil.com/api/post-newest", {

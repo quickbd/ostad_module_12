@@ -3,11 +3,6 @@ import { format } from "date-fns";
 import Link from "next/link";
 import { Suspense } from "react";
 
-export const metadata = {
-  title: "My Blog",
-  description: "Blog List",
-};
-
 export default async function Blog({ params }) {
   const id = params.slug;
   const allPostData = await getAllPosts(id);
