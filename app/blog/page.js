@@ -1,4 +1,6 @@
+"use client";
 import getPostCategory from "@/lib/getPostCategory";
+import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import Link from "next/link";
 import NewestPost from "./newest/page";
 export const metadata = {
@@ -22,6 +24,13 @@ export default async function Blog() {
             </ul>
           </div>
           <div className="lg:w-full ">
+            <ProgressBar
+              height="4px"
+              color="#ff0000"
+              options={{ showSpinner: true }}
+              shallowRouting
+            />
+
             <NewestPost />
           </div>
         </div>

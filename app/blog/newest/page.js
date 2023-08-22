@@ -1,6 +1,6 @@
+import { format } from "date-fns";
 import Link from "next/link";
 import { Suspense } from "react";
-
 export const metadata = {
   title: "My Blog",
   description: "Blog List",
@@ -40,7 +40,7 @@ export default async function NewestPost() {
                   </h5>
                 </Link>
                 <div className="float-end text-end text-xs font-light">
-                  Date: {blog.created_at}
+                  Date: {format(new Date(blog.created_at), "dd-MMM-yyyy")}
                 </div>
                 <Link
                   href={`blog/${blog.category_id}/${blog.id}`}

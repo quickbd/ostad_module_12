@@ -1,10 +1,10 @@
-import Link from "next/link";
-
 import styles from "@/app/blog/styles.module.css";
 import getPostDetails from "@/lib/getPostDetails";
+import { format } from "date-fns";
+import Link from "next/link";
 
 export default async function blogDetails({ params: { postid } }) {
-  // console.log(postid);
+  console.log(postid);
   const post = await getPostDetails(postid);
 
   if (post.postDetails) {
@@ -27,7 +27,8 @@ export default async function blogDetails({ params: { postid } }) {
             />
             <h1 className={styles.red}>{post.postDetails.title}</h1>
             <div className="text-xs font-light">
-              Date: {post.postDetails.created_at}
+              Date:{" "}
+              {format(new Date(post.postDetails.created_at), "dd-MMM-yyyy")}
             </div>
             <p>{post.postDetails.content}</p>
           </div>

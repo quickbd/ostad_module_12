@@ -1,4 +1,5 @@
 import getAllPosts from "@/lib/getAllPosts";
+import { format } from "date-fns";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -28,7 +29,7 @@ export default async function Blog({ params }) {
                   </h5>
                 </Link>
                 <div className="float-end text-end text-xs font-light">
-                  Date: {post.created_at}
+                  Date: {format(new Date(post.created_at), "dd-MMM-yyyy")}
                 </div>
                 <p> {post.short}</p>
                 <Link
