@@ -2,10 +2,6 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 import getPostCategory from "@/lib/getPostCategory";
-export const metadata = {
-  title: "Quick Blog",
-  description: "Blog List",
-};
 
 export default async function BlogCategories() {
   let blogData = await getPostCategory();
