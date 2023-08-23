@@ -1,5 +1,3 @@
-import { Suspense } from "react";
-
 export const metadata = {
   title: "About me",
   description: "Md. Hasanat Zamil, Project manager",
@@ -8,31 +6,30 @@ export const metadata = {
 export default async function Aboutus(param) {
   return (
     <div className="container   m-auto my-40 items-center justify-between">
-      <h1 className="text-center mt-30">About Us</h1>
-      <Suspense fallback={<h3>Loadding Post.....</h3>}>
-        <div className="  justify-center  m-auto">
-          <div className="flex text-justify">
-            <div className="md:grid-cols-4 sm:grid-col-12 text-center gap-5">
-              <div className="avatar">
-                <div className="w-40 rounded-full">
-                  <img src="/images/zamil.jpg" />
-                </div>
-              </div>
-              <h2 className=" font-bold text-[16px]">Md. Hasanat Zamil</h2>
-              <span>e: hzamil@gmail.com</span>
-            </div>
-            <div className="md:grid-cols-2  gap-12 grid-col-8 grid   ">
-              I am Hasanat Zamil. I am full stack web developer. I have 18years
-              of experience with web programming. Now I am update myself with
-              React Js. I am a web developer with a vast array of knowledge in
-              many different front end and back end languages, responsive
-              frameworks, databases, and best code practices. My objective is
-              simply to be the best web developer that I can be and to
-              contribute to the technology industry all that I know and can do.
-            </div>
-          </div>
+      <div
+        className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md flex flex-col items-center
+       bg-white md:flex-row md:max-w-xl"
+      >
+        <img
+          className="object-cover w-full rounded-t-lg h-100 md:h-auto md:w-100 md:rounded-none md:rounded-l-lg"
+          src="/images/zamil.jpg"
+          alt=""
+        />
+        <div className="flex flex-col justify-between p-4 leading-normal">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            About Me
+          </h5>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            I am Hasanat Zamil. I am full stack web developer. I have 18years of
+            experience with web programming. Now I am update myself with React
+            Js. I am a web developer with a vast array of knowledge in many
+            different front end and back end languages, responsive frameworks,
+            databases, and best code practices. My objective is simply to be the
+            best web developer that I can be and to contribute to the technology
+            industry all that I know and can do.
+          </p>
         </div>
-      </Suspense>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+ 
+
+#MHZ
+/app/middleware.js
+/app/blog/_api/
 
 # testing
 /coverage
