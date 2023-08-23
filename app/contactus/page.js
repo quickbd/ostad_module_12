@@ -7,10 +7,9 @@ export default function contactus(param) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Here, you can add logic to save the income transaction to a data store.
-    console.log("Income:", amount, description);
-    setAmount("");
-    setDescription("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
   };
 
   return (
@@ -85,12 +84,13 @@ export default function contactus(param) {
                     />
                   </div>
                   <div className="text-right">
-                  <button
-                    type="submit"
-                    className="border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-600 focus:outline-none focus:shadow-outline"
-                  >
-                    Submit
-                  </button></div>
+                    <button
+                      type="submit"
+                      className="border border-green-500 bg-green-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-green-600 focus:outline-none focus:shadow-outline"
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </form>
               </div>
             </section>

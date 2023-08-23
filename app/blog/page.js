@@ -20,7 +20,7 @@ export default async function Blog() {
                     href={`blog/${blog.id}`}
                     className="list-none  hover:text-indigo-600"
                   >
-                    {blog.name ?? ""}{" "}
+                    {blog.name ?? ""}
                   </Link>
                 </li>
               ))}
