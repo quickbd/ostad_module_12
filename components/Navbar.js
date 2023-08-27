@@ -40,6 +40,10 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="p-4">
+            <Link href="/mod_13_cookie">Cookie</Link>
+          </li>
+
+          <li className="p-4">
             <Link href="/about">About</Link>
           </li>
 

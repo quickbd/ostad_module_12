@@ -13,6 +13,8 @@
     "autoprefixer": "10.4.14",
     "date-fns": "^2.30.0",
     "google-map-react": "^2.2.1",
+    "i18n": "^0.15.1",
+    "js-cookie": "^3.0.5",
     "next": "13.4.13",
     "next-nprogress-bar": "^2.1.2",
     "postcss": "8.4.27",
